@@ -1,109 +1,136 @@
-#noscript-alert {
-    display: none; /* Oculta el mensaje por defecto */
-    background-color: red;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    font-weight: bold;
+:root {
+  /* Colores */
+  --color-rojo: red;
+  --color-blanco: white;
+  --color-verde-oscuro: #181C14;
+  --color-verde: #697565;
+  --color-beige: #ECDFCC;
+  --color-beige-claro: #D4C9BE;
+  --color-hover: #3C3D37;
+  --color-negro-transparente: rgba(0, 0, 0, 0.4);
+  --color-borde-blanco: #f1f1f1;
+
+  /* Tipografía */
+  --fuente-principal: 'MyFont', cursive;
+
+  /* Tamaños */
+  --padding-footer: 40px 0;
+  --padding-alerta: 10px;
+  --altura-carrusel: 500px;
+  --tamaño-iconos: 45px;
+  --tamaño-texto-footer: 14px;
+  --ancho-bg-text: 20%;
+  --tamaño-texto-1: 6vw;
 }
-  .mi-navbar {
-    z-index: 10;
-  }
 
-  /* Asegura que el nav se superponga correctamente */
-  .carousel-item img {
-    height: 500px; /* Ajusta la altura del carrusel */
-    object-fit: cover;
-  }
+/* Fuente personalizada */
+@font-face {
+  font-family: 'MyFont';
+  src: url('../fonts/Lobster-Regular.ttf');
+}
 
- 
-  .portfolio-item {
-    display: none; /* Hide by default */
-  }
-  .show {
-    display: block !important;
-  }
-
-  .border{
-    border-color: #181C14; 
-    background-color: 
-    #181C14;
-  }
-  .border2{
-    border-color: #697565; 
-    background-color: 
-    #697565;
-  }
-  .bg-carrusel{
-    background-color: #ECDFCC;
-
-  }
-
-
-
-  footer {
-    background-color: #030303; /* Fondo verde */
-    color: #D4C9BE; 
-    padding: 40px 0;
-  }
-
-  footer h4 {
-    color: #D4C9BE; /* Color de los encabezados */
-    font-weight: bold;
-  }
-
-  footer a {
-    color: #D4C9BE; /* Enlaces blancos */
-    text-decoration: none;
-    margin-bottom: 10px;
-    display: block;
-  }
-
-  footer a:hover {
-    color: #fb7968; /* Color amarillo al pasar el ratón */
-  }
-
-  .footer_author {
-    font-size: 14px;
-    color: #D4C9BE;
-    margin-top: 20px;
-  }
-  .social-icons img {
-    width: 45px;
-    height: 45px;
-    transition: transform 0.3s ease;
-  }
-
- .bg-text {
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-  color: white;
+/* Alerta sin JS */
+#noscript-alert {
+  display: none;
+  background-color: var(--color-rojo);
+  color: var(--color-blanco);
+  padding: var(--padding-alerta);
+  text-align: center;
   font-weight: bold;
-  border: 3px solid #f1f1f1;
+}
+
+/* Navbar */
+.mi-navbar {
+  z-index: 10;
+}
+
+/* Carrusel */
+.carousel-item img {
+  height: var(--altura-carrusel);
+  object-fit: cover;
+}
+.bg-carrusel {
+  background-color: var(--color-beige);
+}
+
+/* Portafolio */
+.portfolio-item {
+  display: none;
+}
+.show {
+  display: block !important;
+}
+
+/* Bordes */
+.border {
+  border-color: var(--color-verde-oscuro);
+  background-color: var(--color-verde-oscuro);
+}
+.border2 {
+  border-color: var(--color-verde);
+  background-color: var(--color-verde);
+}
+
+/* Footer */
+footer {
+  background-color: var(--color-verde);
+  color: var(--color-beige-claro);
+  padding: var(--padding-footer);
+}
+footer h4 {
+  color: var(--color-beige);
+  font-weight: bold;
+}
+footer a {
+  color: var(--color-beige);
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: block;
+}
+footer a:hover {
+  color: var(--color-hover);
+}
+.footer_author {
+  font-size: var(--tamaño-texto-footer);
+  color: var(--color-beige);
+  margin-top: 20px;
+}
+
+/* Iconos sociales */
+.social-icons img {
+  width: var(--tamaño-iconos);
+  height: var(--tamaño-iconos);
+  transition: transform 0.3s ease;
+}
+
+/* Texto con fondo */
+.bg-text {
+  background-color: var(--color-negro-transparente);
+  color: var(--color-blanco);
+  font-weight: bold;
+  border: 3px solid var(--color-borde-blanco);
   position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  width: 40%;
+  width: var(--ancho-bg-text);
   padding: 20px;
   text-align: center;
 }
-@font-face {
-  font-family: 'MyFont';
-  src: url('../fonts/Lobster-Regular.ttf');
-}
+
+/* Texto decorativo */
 .text-1 {
-  font-family: 'MyFont', cursive;
-  color: #D4C9BE;
-  font-size: 6vw;
+  font-family: var(--fuente-principal);
+  color: var(--color-beige);
+  font-size: var(--tamaño-texto-1);
   text-align: center;
   position: absolute;
-  top: 20%;              
+  top: 20%;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 2;            
-  background-color: rgba(0, 0, 0, 0.4); 
-  padding: 10px 20px;    
-  border-radius: 8px;    
+  z-index: 2;
+  background-color: var(--color-negro-transparente);
+  padding: 10px 20px;
+  border-radius: 8px;
 }
