@@ -1,0 +1,55 @@
+#noscript-alert {
+    display: none; /* Oculta el mensaje por defecto */
+    background-color: red;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+  .mi-navbar {
+    z-index: 10;
+  }
+
+  /* Asegura que el nav se superponga correctamente */
+  .carousel-item img {
+    height: 500px; /* Ajusta la altura del carrusel */
+    object-fit: cover;
+  }
+
+ 
+  .portfolio-item {
+    display: none; /* Hide by default */
+  }
+  .show {
+    display: block !important;
+  }
+
+  footer {
+    background-color: #28a745; /* Fondo verde */
+    color: white;
+    padding: 40px 0;
+  }
+
+  footer h4 {
+    color: #f8f9fa; /* Color de los encabezados */
+    font-weight: bold;
+  }
+
+  footer a {
+    color: #f8f9fa; /* Enlaces blancos */
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  footer a:hover {
+    color: #ffcc00; /* Color amarillo al pasar el ratón */
+  }
+
+  .footer_author {
+    font-size: 14px;
+    color: #d1d1d1;
+    margin-top: 20px;
+  }
+
+ 

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <title>Inicio</title>
+</head>
+
+<body>
+
+
+    <header>
+        <!-- Carrusel con nav encima -->
+        <div id="carouselExampleCaptions" class="carousel slide position-relative">
+
+            <!-- Nav superpuesto al carrusel -->
+            <nav class="navbar navbar-expand-sm mi-navbar position-absolute top-0 start-0 w-100">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-white" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Disabled</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Carrusel -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/meditacion3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/meditacion.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/meditacion2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <h2 class="text-center my-5">Quienes somos</h2>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="img col-6">
+                    <img src="./assets/meditacion.jpg" width="80%" alt="Imagen de meditación">
+                </div>
+                <div class="text col-6">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At itaque nobis, sit hic nostrum
+                        corporis, vel minima beatae alias laborum quod ipsam deleniti iste accusamus magni impedit optio
+                        consequatur officia?</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="text-center my-5">Lo hacemos por ti</h2>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="img col-6">
+                    <img src="./assets/meditacion.jpg" width="80%" alt="Imagen de meditación">
+                </div>
+                <div class="text col-6">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At itaque nobis, sit hic nostrum
+                        corporis, vel minima beatae alias laborum quod ipsam deleniti iste accusamus magni impedit optio
+                        consequatur officia?</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container my-5 text-center">
+            <h2 class="mb-4">Para ti</h2>
+
+            <!-- Filter Buttons -->
+            <div class="mb-4">
+                <button class="btn btn-outline-primary filter-btn" data-filter="all">All</button>
+                <button class="btn btn-outline-primary filter-btn" data-filter="web">Web</button>
+                <button class="btn btn-outline-primary filter-btn" data-filter="design">Design</button>
+                <button class="btn btn-outline-primary filter-btn" data-filter="photo">Photography</button>
+            </div>
+
+            <!-- Portfolio Items -->
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12 my-2 portfolio-item web show">
+                    <div class="card">
+                        <img src="https://www.nestlemenuplanner.es/modules/custom/nestlemenuplanner/src/assets/nestlemenuplanner/_img/_sabias-que/menu-mediterraneo.jpg?v=67"
+                            class="card-img-top" alt="Web Project">
+                        <div class="card-body">
+                            <h5 class="card-title">Web Project</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12 my-2 portfolio-item web show">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Web Project">
+                        <div class="card-body">
+                            <h5 class="card-title">Web Project</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12 my-2 portfolio-item web show">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Web Project">
+                        <div class="card-body">
+                            <h5 class="card-title">Web Project</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12 my-2 portfolio-item web show">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Web Project">
+                        <div class="card-body">
+                            <h5 class="card-title">Web Project</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Final Portfolio Items -->
+                <!-- inicio Design Project-->
+                <div class="col-lg-3 col-md-6 col-12 my-2 portfolio-item design show">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Design Project">
+                        <div class="card-body">
+                            <h5 class="card-title">Design Project</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12 my-2 portfolio-item design show">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Design Project">
+                        <div class="card-body">
+                            <h5 class="card-title">Design Project</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12 my-2 portfolio-item design show">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Design Project">
+                        <div class="card-body">
+                            <h5 class="card-title">Design Project</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12 my-2 portfolio-item design show">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Design Project">
+                        <div class="card-body">
+                            <h5 class="card-title">Design Project</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- final Design Project-->
+                <div class="col-lg-3 col-md-6 col-12 my-2 portfolio-item photo show">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Photo Project">
+                        <div class="card-body">
+                            <h5 class="card-title">Photography Project</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12 my-2 portfolio-item photo show">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Photo Project">
+                        <div class="card-body">
+                            <h5 class="card-title">Photography Project</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12 my-2 portfolio-item photo show">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Photo Project">
+                        <div class="card-body">
+                            <h5 class="card-title">Photography Project</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12 my-2 portfolio-item photo show">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Photo Project">
+                        <div class="card-body">
+                            <h5 class="card-title">Photography Project</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- fin photography -->
+
+                <!-- Add more items with corresponding classes (web, design, photo) -->
+            </div>
+        </div>
+
+        <h2 class="text-center my-5">Un equipo de expertos enfocado en ayudarte a cumplir tus metas</h2>
+        <div class="container-fluid my-5">
+            <div class="row justify-content-center d-flex gap-2 bg-success-subtle">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://pymstatic.com/5844/conversions/personas-emocionales-wide_webp.webp"
+                        class="card-img-top" alt="Personas emocionadas">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://www.ashoka.org/sites/default/files/styles/medium_1600x1000/public/thumbnails/images/daniela-kreimer.jpg?itok=R89tVtb4"
+                        class="card-img-top" alt="Daniela Kreimer">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://images.ecestaticos.com/El0cZYn3_-ttA7M4ME3Llj3dYcs=/70x0:2638x1809/557x418/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F317%2Fae0%2F456%2F317ae0456e63bd37ce7fa809d5955672.jpg"
+                        class="card-img-top" alt="Persona reflexionando">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://www.hola.com/horizon/landscape/6a53cd5134b2-getty-chica-feliz-t.jpg?im=Resize=(960),type=downsize"
+                        class="card-img-top" alt="Mujer sonriente">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container container text-center">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Secciones</h4>
+                    <a href="#">Inicio</a>
+                    <a href="#">Para ti</a>
+                </div>
+                <div class="col-md-4">
+                    <h4>Nosotros</h4>
+                    <a href="#">Nuestro equipo</a>
+                    <a href="#">Quiénes somos</a>
+                </div>
+                <div class="col-md-4">
+                    <h4>Contacto</h4>
+                    <a href="#">Contáctenos</a>
+                    <a href="#">Servicio al cliente</a>
+                </div>
+            </div>
+            </div>
+
+
+            <div class="container">
+                <!-- Sección de Redes Sociales centradas -->
+                <div class="d-flex justify-content-center gap-4 my-4">
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="https://img.icons8.com/?size=100&id=118497&format=png&color=000000" alt="Facebook">
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="https://img.icons8.com/?size=100&id=zXhRTdxWEKE5&format=png&color=000000" alt="Twitter">
+                    </a>
+                    <a href="https://instagram.com" target="_blank">
+                        <img src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000" alt="Instagram">
+                    </a>
+                </div>
+        
+                <!-- Información de derechos reservados -->
+                <div class="text-center">
+                    <p class="footer_author">© 2025 Hogar en forma - Todos los derechos reservados</p>
+                    <p>Diseñado por <a href="https://github.com/fabian1031" target="_blank">Fabian Béltran</a></p>
+                </div>
+            </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./JavaScript/script.js"></script>
+
+</body>
+
+</html>
