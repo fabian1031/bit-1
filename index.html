@@ -16,9 +16,8 @@
     <header>
         <!-- Carrusel con nav encima -->
         <div id="carouselExampleCaptions" class="carousel slide position-relative">
-
             <!-- Nav superpuesto al carrusel -->
-            <nav class="navbar navbar-expand-sm mi-navbar position-absolute top-0 start-0 w-100">
+            <nav class="navbar navbar-expand-md mi-navbar position-absolute top-0 start-0 w-100">
                 <div class="container-fluid">
                     <a class="navbar-brand text-white" href="#"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -26,18 +25,18 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto">
+                        <ul class="navbar-nav ms-auto gap-2 ">
                             <li class="nav-item">
-                                <a class="nav-link active text-white" aria-current="page" href="./index.html">Inicio</a>
+                                <a class="nav-link border2 btn btn-outline filter-btn w-100 w-md-auto text-center mt-2" aria-current="page" href="./index.html">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="./pages/form.html">Contacto</a>
+                                <a class="nav-link border2 btn btn-outline filter-btn w-100 w-md-auto text-center mt-2"" href="./pages/form.html">Contacto</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Comprar</a>
+                                <a class="nav-link border2 btn btn-outline filter-btn w-100 w-md-auto text-center mt-2"" href="#">Comprar</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Disabled</a>
+                                <a class="nav-link border2 btn btn-outline filter-btn w-100 w-md-auto text-center mt-2"" href="#">Disabled</a>
                             </li>
                         </ul>
                     </div>
@@ -45,6 +44,7 @@
             </nav>
             <!-- Carrusel -->
             <div class="carousel-indicators">
+                
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
@@ -54,24 +54,26 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
+                    <h1 class="text-1" >Hogar en forma</h1>
                     <img src="./assets/meditacion3.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
+                        
+                        <h5 class="bg-text">Ejercita</h5>
                     </div>
                 </div>
                 <div class="carousel-item">
+                    <h1 class="text-1 h1-superior" >Hogar en forma</h1>
                     <img src="./assets/meditacion.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
+                        <h5 class="bg-text">Equilibra</h5>
+                        
                     </div>
                 </div>
                 <div class="carousel-item">
+                    <h1 class="text-1 h1-superior" >Hogar en forma</h1>
                     <img src="./assets/meditacion2.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
+                        <h5 class="bg-text">Nutre</h5>
                     </div>
                 </div>
             </div>
@@ -89,8 +91,11 @@
     </header>
 
     <main>
+        <div class="border2 p-5 mb-5">
+        </div>
+        
         <h2 class="text-center my-5">Quienes somos</h2>
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="img col-6">
                     <img src="./assets/meditacion.jpg" width="80%" alt="Imagen de meditación">
@@ -105,7 +110,7 @@
         <hr class="my-5">
 
         <h2 class="text-center my-5">Lo hacemos por ti</h2>
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="img col-6">
                     <img src="./assets/meditacion.jpg" width="80%" alt="Imagen de meditación">
@@ -117,18 +122,16 @@
                 </div>
             </div>
         </div>
-        <hr class="my-5">
 
-
-        <div class="container my-5 text-center">
+        <div class="container-fluid my-5 text-center bg-carrusel">
             <h2 class="mb-4">Para ti</h2>
 
             <!-- Filter Buttons -->
-            <div class="mb-4">
-                <button class="btn btn-outline-primary filter-btn" data-filter="all">All</button>
-                <button class="btn btn-outline-primary filter-btn" data-filter="web">Web</button>
-                <button class="btn btn-outline-primary filter-btn" data-filter="design">Design</button>
-                <button class="btn btn-outline-primary filter-btn" data-filter="photo">Photography</button>
+            <div class=" mb-4">
+                <button class="border2 btn btn-outline filter-btn" data-filter="all">All</button>
+                <button class="border2 btn btn-outline filter-btn" data-filter="web">Web</button>
+                <button class="border2 btn btn-outline filter-btn" data-filter="design">Design</button>
+                <button class="border2 btn btn-outline filter-btn" data-filter="photo">Photography</button>
             </div>
 
             <!-- Portfolio Items -->
@@ -248,9 +251,9 @@
             </div>
         </div>
 
-        <h2 class="text-center my-5">Un equipo de expertos enfocado en ayudarte a cumplir tus metas</h2>
+        <h2 class="text-center">Un equipo de expertos enfocado en ayudarte a cumplir tus metas</h2>
         <div class="container-fluid my-5">
-            <div class="row justify-content-center d-flex gap-2 bg-success-subtle">
+            <div class="row justify-content-center d-flex gap-2">
                 <div class="card" style="width: 18rem;">
                     <img src="https://pymstatic.com/5844/conversions/personas-emocionales-wide_webp.webp"
                         class="card-img-top" alt="Personas emocionadas">
@@ -315,7 +318,7 @@
 
             <div class="container">
                 <!-- Sección de Redes Sociales centradas -->
-                <div class="d-flex justify-content-center gap-4 my-4">
+                <div class="d-flex justify-content-center gap-4 my-4 social-icons">
                     <a href="https://facebook.com" target="_blank">
                         <img src="https://img.icons8.com/?size=100&id=118497&format=png&color=000000" alt="Facebook">
                     </a>
