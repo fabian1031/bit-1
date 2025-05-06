@@ -9,6 +9,7 @@
   --color-hover: #3C3D37;
   --color-negro-transparente: rgba(0, 0, 0, 0.4);
   --color-borde-blanco: #f1f1f1;
+  
 
   /* Tipografía */
   --fuente-principal: 'MyFont', cursive;
@@ -21,6 +22,21 @@
   --tamaño-texto-footer: 14px;
   --ancho-bg-text: 20%;
   --tamaño-texto-1: 6vw;
+}
+
+.form-label {
+  font-family: var(--fuente-principal);
+}
+
+.custom-input {
+  background-color: var(--color-beige);
+  border-color: var(--color-borde-blanco);
+}
+
+.custom-button {
+  background-color: var(--color-verde);
+  color: var(--color-beige);
+  font-family: var(--fuente-principal);
 }
 
 /* Fuente personalizada */

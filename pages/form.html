@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
-    <title>Inicio</title>
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+    <title>Contacto</title>
 </head>
 <body>
     
@@ -88,36 +88,43 @@
     <main>
         <h2 class="text-center my-5">Formulario de Contacto</h2>
         <div class="container my-5">
-            <form action="action_page.php ">
-              
-              <div class="mb-3 ">
-                <label for="fname" class="form-label" style="font-family: var(--fuente-principal);">Nombre</label>
-                <input type="text" class="form-control" id="fname" name="firstname" placeholder="Tu nombre.." style="background-color: var(--color-beige); border-color: var(--color-borde-blanco);">
+            <form id="form">
+          
+              <div class="mb-3">
+                <label for="fname" class="form-label">Nombre</label>
+                <input type="text" class="form-control custom-input" id="fname" name="name" placeholder="Tu nombre..">
               </div>
           
               <div class="mb-3">
-                <label for="lname" class="form-label" style="font-family: var(--fuente-principal);">Apellido</label>
-                <input type="text" class="form-control" id="lname" name="lastname" placeholder="Tu apellido.." style="background-color: var(--color-beige); border-color: var(--color-borde-blanco);">
+                <label for="lname" class="form-label">Apellido</label>
+                <input type="text" class="form-control custom-input" id="lname" name="lastname" placeholder="Tu apellido..">
               </div>
           
               <div class="mb-3">
-                <label for="country" class="form-label" style="font-family: var(--fuente-principal);">País</label>
-                <select id="country" name="country" class="form-select" style="background-color: var(--color-beige); border-color: var(--color-borde-blanco);">
-                  <option value="australia">Colombia</option>
-                  <option value="canada">Venezuela</option>
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control custom-input" id="email" name="email" placeholder="tucorreo@ejemplo.com">
+              </div>
+          
+              <div class="mb-3">
+                <label for="country" class="form-label">País</label>
+                <select id="country" name="country" class="form-select custom-input">
+                  <option value="Colombia">Colombia</option>
+                  <option value="Venezuela">Venezuela</option>
                   <option value="usa">EE. UU.</option>
                 </select>
               </div>
           
               <div class="mb-3">
-                <label for="subject" class="form-label" style="font-family: var(--fuente-principal);">Asunto</label>
-                <textarea id="subject" name="subject" class="form-control" placeholder="Escribe algo.." rows="6" style="background-color: var(--color-beige); border-color: var(--color-borde-blanco);"></textarea>
+                <label for="subject" class="form-label">Asunto</label>
+                <textarea id="subject" name="subject" class="form-control custom-input" placeholder="Escribe algo.." rows="6"></textarea>
               </div>
           
-              <button type="submit" class="btn" style="background-color: var(--color-verde); color: var(--color-beige);">Enviar</button>
+              <button type="submit" class="btn custom-button">Enviar</button>
+
           
             </form>
           </div>
+          
           
           
 
