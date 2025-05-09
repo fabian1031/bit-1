@@ -86,6 +86,10 @@
   border-color: var(--color-verde);
   background-color: var(--color-verde);
 }
+/* parrafos */
+.parrafo{
+  text-align: justify;
+}
 
 /* Footer */
 footer {
