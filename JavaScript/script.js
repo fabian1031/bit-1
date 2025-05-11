@@ -1,7 +1,15 @@
 'use strict';
-
 const filterButtons = document.querySelectorAll('.filter-btn');
 const items = document.querySelectorAll('.portfolio-item');
+
+// Mostrar solo "web" al cargar
+items.forEach(item => {
+  if (item.classList.contains('web')) {
+    item.classList.add('show');
+  } else {
+    item.classList.remove('show');
+  }
+});
 
 filterButtons.forEach(button => {
   button.addEventListener('click', () => {

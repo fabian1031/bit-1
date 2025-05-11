@@ -25,20 +25,19 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto gap-2 ">
+                        <ul class="navbar-nav ms-auto gap-4">
                             <li class="nav-item">
                                 <a class="nav-link border2 btn btn-outline filter-btn w-100 w-md-auto text-center mt-2"
-                                    aria-current="page" href="./index.html"> Inicio</a>
+                                    href="./index.html">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link border2 btn btn-outline filter-btn w-100 w-md-auto text-center mt-2"" href="
-                                    ./pages/form.html">Contacto</a>
+                                <a class="nav-link border2 btn btn-outline filter-btn w-100 w-md-auto text-center mt-2"
+                                    href="./pages/form.html">Contacto</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link border2 btn btn-outline filter-btn w-100 w-md-auto text-center mt-2"" href="
-                                    #">Comprar</a>
+                                <a class="nav-link border2 btn btn-outline filter-btn w-100 w-md-auto text-center mt-2"
+                                    href="#">Comprar</a>
                             </li>
-
                         </ul>
                     </div>
                 </div>
@@ -92,14 +91,11 @@
     </header>
 
     <main>
-        <div class="border2 p-5 mb-5">
-        </div>
-
-        <h2 class="text-center my-5">¿Quiénes somos?</h2>
+        <h2 class="text-center my-5 titte2">¿Quiénes somos?</h2>
         <div class="container">
             <div class="row">
                 <div class="d-flex justify-content-center">
-                    <iframe class="w-75" height="500"
+                    <iframe class="w-75 rounded" height="500"
                         src="https://www.youtube.com/embed/aP9tboYqFGU?si=6xDFD9wckIeE6Dg_" allowfullscreen>
                     </iframe>
                 </div>
@@ -121,229 +117,234 @@
         </div>
 
         <hr class="my-5">
+        <!-- Texto -->
+        <div class="container my-5">
+            <div class="row align-items-center">
+                <!-- Imagen -->
+                <div class="col-xl-6 col-12 d-flex justify-content-center mb-4 mb-xl-0">
+                    <img src="./assets/lohacemosporti2.jpg" class="img-fluid w-100 w-md-75 w-xl-100 rounded"
+                        style="max-width: 900px;" alt="Imagen de meditación">
+                </div>
+
+
                 <!-- Texto -->
-                <div class="container my-5">
-                    <div class="row align-items-center">
-                        <!-- Imagen -->
-                        <div class="col-xl-6 col-12 d-flex justify-content-center mb-4 mb-xl-0">
-                            <img src="./assets/lohacemosporti2.jpg" class="img-fluid w-100 w-md-75 w-xl-100"
-                                style="max-width: 500px;" alt="Imagen de meditación">
-                        </div>
+                <div class="col-xl-6 col-12">
+                    <div>
+                        <h2 class="mb-3 text-center titte2">Tu bienestar comienza aquí</h2>
+                        <p class="my-2 parrafo">
+                            En <strong>Hogar en forma</strong> te ayudamos a cuidar tu bienestar físico y emocional
+                            desde casa, con una experiencia accesible, práctica y a tu ritmo.
+                        </p>
+                        <p class="my-2 parrafo">
+                            Accede a cursos guiados por profesionales sin horarios estrictos ni traslados, y mejora tu
+                            calidad de vida estés donde estés.
+                        </p>
 
-                        <!-- Texto -->
-                        <div class="col-xl-6 col-12">
-                            <div>
-                                <h2 class="mb-3 text-center">Tu bienestar comienza aquí</h2>
-                                <p class="my-2">
-                                    En <strong>Hogar en forma</strong>, entendemos que cuidar de ti mismo no siempre es
-                                    fácil, especialmente con el ritmo de vida actual.
-                                    Por eso creamos una aplicación pensada para que puedas trabajar en tu bienestar
-                                    físico y emocional desde el lugar donde te sientes más cómodo: tu hogar.
-                                    Nuestro objetivo es ofrecerte una experiencia accesible, práctica y personalizada,
-                                    donde puedas aprender, mejorar y transformar tus hábitos a tu propio ritmo.
-                                </p>
-                                <p>
-                                    Ya no necesitas trasladarte ni adaptarte a horarios estrictos. En nuestra plataforma
-                                    encontrarás cursos diseñados por profesionales en diferentes áreas del bienestar,
-                                    que te guiarán paso a paso para lograr tus metas. No importa si estás comenzando o
-                                    si ya llevas tiempo en este camino, aquí encontrarás recursos valiosos para
-                                    sentirte mejor contigo mismo cada día.
-                                </p>
-                                <ul>
-                                    <li>Nutrición y alimentación</li>
-                                    <li>Ejercicio físico</li>
-                                    <li>Salud mental</li>
-                                </ul>
-                            </div>
+                        <ul class="my-2 parrafo">
+                            <li>Nutrición y alimentación</li>
+                            <li>Ejercicio físico</li>
+                            <li>Salud mental</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-5 pt-1 text-center bg-carrusel">
+            <h2 class="mt-5 mb-5 titte2">Para ti</h2>
+
+            <!-- Filter Buttons -->
+            <div class="mb-4 d-grid gap-2 d-sm-flex justify-content-center">
+                <button class="border2 btn btn-outline filter-btn parrafo" data-filter="web">Nutrición y
+                    alimentación</button>
+                <button class="border2 btn btn-outline filter-btn parrafo" data-filter="design">Ejercicio
+                    físico</button>
+                <button class="border2 btn btn-outline filter-btn parrafo" data-filter="photo">Salud mental</button>
+                <button class="border2 btn btn-outline filter-btn parrafo" data-filter="all">Ver todo</button>
+            </div>
+
+            <!-- Portfolio Items -->
+            <div class="row">
+                <!-- Web Items -->
+                <div class="col-lg-4 col-md-6 col-12 my-2 portfolio-item web show">
+                    <div class="card">
+                        <img src="https://www.nestlemenuplanner.es/modules/custom/nestlemenuplanner/src/assets/nestlemenuplanner/_img/_sabias-que/menu-mediterraneo.jpg?v=67"
+                            class="card-img-top" alt="dieta">
+                        <div class="card-body">
+                            <h5 class="card-title parrafo">Dietas y Planificación Alimentaria</h5>
                         </div>
                     </div>
                 </div>
 
-
-
-                <div class="container-fluid my-5 pt-1 text-center bg-carrusel">
-                    <h2 class="mt-5 mb-5">Para ti</h2>
-
-                    <!-- Filter Buttons -->
-                    <div class="mb-4 d-grid gap-2 d-sm-flex justify-content-center">
-                        <button class="border2 btn btn-outline filter-btn" data-filter="all">Ver todo</button>
-                        <button class="border2 btn btn-outline filter-btn" data-filter="web">Nutrición y
-                            alimentación</button>
-                        <button class="border2 btn btn-outline filter-btn" data-filter="design">Ejercicio
-                            físico</button>
-                        <button class="border2 btn btn-outline filter-btn" data-filter="photo">Salud mental</button>
-                    </div>
-
-                    <!-- Portfolio Items -->
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 col-12 my-2 portfolio-item web show">
-                            <div class="card">
-                                <img src="https://www.nestlemenuplanner.es/modules/custom/nestlemenuplanner/src/assets/nestlemenuplanner/_img/_sabias-que/menu-mediterraneo.jpg?v=67"
-                                    class="card-img-top" alt="dieta">
-                                <div class="card-body">
-                                    <h5 class="card-title">Dietas y Planificación Alimentario</h5>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 col-12 my-2 portfolio-item web show">
-                            <div class="card">
-                                <img src="https://blog.natruly.com/wp-content/uploads/2017/03/Dieta-paleo-variada.jpg" class="card-img-top" alt="alimento organico">
-                                <div class="card-body">
-                                    <h5 class="card-title">Alimentos Naturales y Orgánicos</h5>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 col-12 my-2 portfolio-item web show">
-                            <div class="card">
-                                <img src="https://ixalud.es/wp-content/uploads/2021/11/Diseno-sin-titulo-73.png" class="card-img-top" alt="Hidratación">
-                                <div class="card-body">
-                                    <h5 class="card-title">Hidratación</h5>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 col-12 my-2 portfolio-item web show">
-                            <div class="card">
-                                <img src="https://impulso06.com/wp-content/uploads/2023/10/Cual-es-la-Relacion-entre-Alimentacion-Nutricion-Salud-y-Envejecimiento-y-por-que-deberias-saberla.png" class="card-img-top"
-                                    alt="Nutrición para Diferentes Etapas de la Vida" class="card-img-top" alt="Nutrición para Diferentes Etapas de la Vida">
-                                <div class="card-body">
-                                    <h5 class="card-title">Nutrición para Diferentes Etapas de la Vida/h5>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Final Portfolio Items -->
-                        <!-- inicio Design Project-->
-                        <div class="col-lg-3 col-md-6 col-12 my-2 portfolio-item design show">
-                            <div class="card">
-                                <img src="https://i.blogs.es/ad46b7/istock-1299769825/1366_2000.webp" alt="Nutrición para Diferentes Etapas de la Vida">
-                                <div class="card-body">
-                                    <h5 class="card-title">Ejercicio cardiovascular</h5>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 col-12 my-2 portfolio-item design show">
-                            <div class="card">
-                                <img src="https://fundacioncajaruralburgos.es/wp-content/uploads/2022/06/fundacion-caja-rural-burgos-flexibilidad-1.jpg" class="card-img-top"
-                                    alt="Flexibilidad y Movilidad">
-                                <div class="card-body">
-                                    <h5 class="card-title">Flexibilidad y Movilidad</h5>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 col-12 my-2 portfolio-item design show">
-                            <div class="card">
-                                <img src="https://i.blogs.es/779312/flexiones-pectorales/1366_2000.webp" class="card-img-top"
-                                    alt="Resistencia">
-                                <div class="card-body">
-                                    <h5 class="card-title">Resistencia</h5>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 col-12 my-2 portfolio-item design show">
-                            <div class="card">
-                                <img src="https://fpsuperiorufv.es/blog/wp-content/uploads/2023/04/herramientas-deportivas-2048x1335.jpg" class="card-img-top"
-                                    alt="Actividades Recreativas">
-                                <div class="card-body">
-                                    <h5 class="card-title">Actividades Recreativas</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- final Design Project-->
-                        <div class="col-lg-3 col-md-6 col-12 my-2 portfolio-item photo show">
-                            <div class="card">
-                                <img src="https://orsys-lemag.com/wp-content/uploads/2021/11/AdobeStock_95012321-Gestion-du-stress.jpg.avif" class="card-img-top" alt="Gestión del Estrés">
-                                <div class="card-body">
-                                    <h5 class="card-title">Gestión del Estrés</h5>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 col-12 my-2 portfolio-item photo show">
-                            <div class="card">
-                                <img src="https://zerenly.com/blog/wp-content/uploads/2024/06/corporate-business-people-min.jpg" class="card-img-top" alt="Bienestar Emocional">
-                                <div class="card-body">
-                                    <h5 class="card-title">Bienestar Emocional</h5>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 col-12 my-2 portfolio-item photo show">
-                            <div class="card">
-                                <img src="https://images.prismic.io/boiron-corporate/b7b919b0-8ee0-4804-be90-e3a0254887b6_14312.jpg?auto=compress%2Cformat&w=1080" class="card-img-top" alt="Autocuidado">
-                                <div class="card-body">
-                                    <h5 class="card-title">Autocuidado</h5>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 col-12 my-2 portfolio-item photo show">
-                            <div class="card">
-                                <img src="https://cdn.prod.website-files.com/61ddd80f691b2c72f08f4e51/6642189769efe79ab6e33cf7_q97d8-mWZSnM6gNBf6_WQSth9JFBsChC6ZpngnqJMdp65Lk-fuNFw2hvU42g9qDaZE_4_0qxqC-QOZASZscoKRXyyDaWL0AorX2D-LOZa14ztNV4t8W5509q0KM5UK7a0OTAkTNMYrblFlECBHOEpcE.jpeg" class="card-img-top" alt="Relaciones Interpersonales">
-                                <div class="card-body">
-                                    <h5 class="card-title">Relaciones Interpersonales</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- fin photography -->
-
-                        <!-- Add more items with corresponding classes (web, design, photo) -->
-                    </div>
-                </div>
-
-                <h2 class="text-center">Un equipo de expertos enfocado en ayudarte a cumplir tus metas</h2>
-                <div class="container-fluid my-5">
-                    <div class="row justify-content-center d-flex gap-2">
-                        <!-- Tarjeta 1 -->
-                        <div class="card" style="width: 18rem; align-items: center;">
-                            <img src="https://pymstatic.com/5844/conversions/personas-emocionales-wide_webp.webp"
-                                class="rounded-circle" alt="Personas emocionadas"
-                                style="width: 200px; height: 200px; object-fit: cover; margin-top: 1rem;">
-                            <div class="card-body text-center ">
-                                <h2>Camila Ríos</h2>
-                                <p class="card-text">Nutricionista deportiva</p>
-                            </div>
-                        </div>
-
-                        <!-- Tarjeta 2 -->
-                        <div class="card " style="width: 18rem; align-items: center;">
-                            <img src="https://www.ashoka.org/sites/default/files/styles/medium_1600x1000/public/thumbnails/images/daniela-kreimer.jpg?itok=R89tVtb4"
-                                class="rounded-circle" alt="Daniela Kreimer"
-                                style="width: 200px; height: 200px; object-fit: cover; margin-top: 1rem;">
-                            <div class="card-body text-center">
-                                <h2>Valentina Herrera</h2>
-                                <p class="card-text"> Entrenadora personal</p>
-                            </div>
-                        </div>
-
-                        <!-- Tarjeta 3 -->
-                        <div class="card" style="width: 18rem; align-items: center;">
-                            <img src="https://images.ecestaticos.com/El0cZYn3_-ttA7M4ME3Llj3dYcs=/70x0:2638x1809/557x418/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F317%2Fae0%2F456%2F317ae0456e63bd37ce7fa809d5955672.jpg"
-                                class="rounded-circle" alt="Persona reflexionando"
-                                style="width: 200px; height: 200px; object-fit: cover; margin-top: 1rem;">
-                            <div class="card-body text-center">
-                                <h2>Laura Sofía Mendoza</h2>
-                                <p class="card-text">
-                                    Psicóloga motivacional</p>
-                            </div>
-                        </div>
-
-                        <!-- Tarjeta 4 -->
-                        <div class="card" style="width: 18rem; align-items: center;">
-                            <img src="https://www.hola.com/horizon/landscape/6a53cd5134b2-getty-chica-feliz-t.jpg?im=Resize=(960),type=downsize"
-                                class="rounded-circle" alt="Mujer sonriente"
-                                style="width: 200px; height: 200px; object-fit: cover; margin-top: 1rem;">
-                            <div class="card-body text-center">
-                                <h2>Daniela Torres</h2>
-                                <p class="card-text">Especialista en bienestar integral</p>
-                            </div>
+                <div class="col-lg-4 col-md-6 col-12 my-2 portfolio-item web show">
+                    <div class="card">
+                        <img src="https://blog.natruly.com/wp-content/uploads/2017/03/Dieta-paleo-variada.jpg"
+                            class="card-img-top" alt="alimento organico">
+                        <div class="card-body">
+                            <h5 class="card-title parrafo">Alimentos Naturales y Orgánicos</h5>
                         </div>
                     </div>
                 </div>
+
+                <div class="col-lg-4 col-md-6 col-12 my-2 portfolio-item web show">
+                    <div class="card">
+                        <img src="https://ixalud.es/wp-content/uploads/2021/11/Diseno-sin-titulo-73.png"
+                            class="card-img-top" alt="Hidratación">
+                        <div class="card-body">
+                            <h5 class="card-title parrafo">Hidratación</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 my-2 portfolio-item web show">
+                    <div class="card">
+                        <img src="https://impulso06.com/wp-content/uploads/2023/10/Cual-es-la-Relacion-entre-Alimentacion-Nutricion-Salud-y-Envejecimiento-y-por-que-deberias-saberla.png"
+                            class="card-img-top" alt="Nutrición para Diferentes Etapas de la Vida">
+                        <div class="card-body">
+                            <h5 class="card-title parrafo">Nutrición para Diferentes Etapas de la Vida</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Design Items -->
+                <div class="col-lg-4 col-md-6 col-12 my-2 portfolio-item design show">
+                    <div class="card">
+                        <img src="https://i.blogs.es/ad46b7/istock-1299769825/1366_2000.webp" class="card-img-top"
+                            alt="cardio">
+                        <div class="card-body">
+                            <h5 class="card-title parrafo">Ejercicio cardiovascular</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 my-2 portfolio-item design show">
+                    <div class="card">
+                        <img src="https://fundacioncajaruralburgos.es/wp-content/uploads/2022/06/fundacion-caja-rural-burgos-flexibilidad-1.jpg"
+                            class="card-img-top" alt="Flexibilidad y Movilidad">
+                        <div class="card-body">
+                            <h5 class="card-title parrafo">Flexibilidad y Movilidad</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 my-2 portfolio-item design show">
+                    <div class="card">
+                        <img src="https://i.blogs.es/779312/flexiones-pectorales/1366_2000.webp" class="card-img-top"
+                            alt="Resistencia">
+                        <div class="card-body">
+                            <h5 class="card-title parrafo">Resistencia</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 my-2 portfolio-item design show">
+                    <div class="card">
+                        <img src="https://fpsuperiorufv.es/blog/wp-content/uploads/2023/04/herramientas-deportivas-2048x1335.jpg"
+                            class="card-img-top" alt="Actividades Recreativas">
+                        <div class="card-body">
+                            <h5 class="card-title parrafo">Actividades Recreativas</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo Items -->
+                <div class="col-lg-4 col-md-6 col-12 my-2 portfolio-item photo show">
+                    <div class="card">
+                        <img src="https://orsys-lemag.com/wp-content/uploads/2021/11/AdobeStock_95012321-Gestion-du-stress.jpg.avif"
+                            class="card-img-top" alt="Gestión del Estrés">
+                        <div class="card-body">
+                            <h5 class="card-title parrafo">Gestión del Estrés</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 my-2 portfolio-item photo show">
+                    <div class="card">
+                        <img src="https://zerenly.com/blog/wp-content/uploads/2024/06/corporate-business-people-min.jpg"
+                            class="card-img-top" alt="Bienestar Emocional">
+                        <div class="card-body">
+                            <h5 class="card-title parrafo">Bienestar Emocional</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 my-2 portfolio-item photo show">
+                    <div class="card">
+                        <img src="https://images.prismic.io/boiron-corporate/b7b919b0-8ee0-4804-be90-e3a0254887b6_14312.jpg?auto=compress%2Cformat&w=1080"
+                            class="card-img-top" alt="Autocuidado">
+                        <div class="card-body">
+                            <h5 class="card-title parrafo">Autocuidado</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 my-2 portfolio-item photo show">
+                    <div class="card">
+                        <img src="https://cdn.prod.website-files.com/61ddd80f691b2c72f08f4e51/6642189769efe79ab6e33cf7_q97d8-mWZSnM6gNBf6_WQSth9JFBsChC6ZpngnqJMdp65Lk-fuNFw2hvU42g9qDaZE_4_0qxqC-QOZASZscoKRXyyDaWL0AorX2D-LOZa14ztNV4t8W5509q0KM5UK7a0OTAkTNMYrblFlECBHOEpcE.jpeg"
+                            class="card-img-top" alt="Relaciones Interpersonales">
+                        <div class="card-body">
+                            <h5 class="card-title parrafo">Relaciones Interpersonales</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- fin photography -->
+
+        <!-- Add more items with corresponding classes (web, design, photo) -->
+        </div>
+        </div>
+
+        <h2 class="text-center titte2">Un equipo de expertos enfocado en ayudarte a cumplir tus metas</h2>
+        <div class="container-fluid my-5">
+            <div class="row justify-content-center d-flex gap-2">
+                <!-- Tarjeta 1 -->
+                <div class="card" style="width: 18rem; align-items: center;">
+                    <img src="https://pymstatic.com/5844/conversions/personas-emocionales-wide_webp.webp"
+                        class="rounded-circle" alt="Personas emocionadas"
+                        style="width: 200px; height: 200px; object-fit: cover; margin-top: 1rem;">
+                    <div class="card-body text-center ">
+                        <h2 class="titte2">Camila Ríos</h2>
+                        <p class="card-text parrafo">Nutricionista deportiva</p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="card " style="width: 18rem; align-items: center;">
+                    <img src="https://www.ashoka.org/sites/default/files/styles/medium_1600x1000/public/thumbnails/images/daniela-kreimer.jpg?itok=R89tVtb4"
+                        class="rounded-circle" alt="Daniela Kreimer"
+                        style="width: 200px; height: 200px; object-fit: cover; margin-top: 1rem;">
+                    <div class="card-body text-center">
+                        <h2 class="titte2">Valentina Herrera</h2>
+                        <p class="card-text parrafo"> Entrenadora personal</p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="card" style="width: 18rem; align-items: center;">
+                    <img src="https://images.ecestaticos.com/El0cZYn3_-ttA7M4ME3Llj3dYcs=/70x0:2638x1809/557x418/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F317%2Fae0%2F456%2F317ae0456e63bd37ce7fa809d5955672.jpg"
+                        class="rounded-circle" alt="Persona reflexionando"
+                        style="width: 200px; height: 200px; object-fit: cover; margin-top: 1rem;">
+                    <div class="card-body text-center">
+                        <h2 class="titte2">Laura Sofía Mendoza</h2>
+                        <p class="card-text parrafo">
+                            Psicóloga motivacional</p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4 -->
+                <div class="card" style="width: 18rem; align-items: center;">
+                    <img src="https://www.hola.com/horizon/landscape/6a53cd5134b2-getty-chica-feliz-t.jpg?im=Resize=(960),type=downsize"
+                        class="rounded-circle" alt="Mujer sonriente"
+                        style="width: 200px; height: 200px; object-fit: cover; margin-top: 1rem;">
+                    <div class="card-body text-center">
+                        <h2 class="titte2">Daniela Torres</h2>
+                        <p class="card-text parrafo">Especialista en bienestar integral</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
     </main>
