@@ -36,7 +36,7 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link border2 btn btn-outline filter-btn w-100 w-md-auto text-center mt-2"
-                                    href="#">Comprar</a>
+                                    href="#" onclick="mostrarAlerta()">Comprar</a>
                             </li>
                         </ul>
                     </div>
@@ -55,25 +55,25 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <h1 class="text-1">Hogar en forma</h1>
-                    <img src="./assets/meditacion3.jpg" class="d-block w-100" alt="...">
+                    <img src="./assets/ejercicio1.jpg" class="d-block w-100" alt="alimentos">
                     <div class="carousel-caption d-none d-md-block">
 
-                        <h5 class="bg-text">Ejercita</h5>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <h1 class="text-1 h1-superior">Hogar en forma</h1>
-                    <img src="./assets/meditacion.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 class="bg-text">Equilibra</h5>
 
                     </div>
                 </div>
                 <div class="carousel-item">
                     <h1 class="text-1 h1-superior">Hogar en forma</h1>
-                    <img src="./assets/meditacion2.jpg" class="d-block w-100" alt="...">
+                    <img src="./assets/meditar1.jpg" class="d-block w-100" alt="meditar">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5 class="bg-text">Nutre</h5>
+
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <h1 class="text-1 h1-superior">Hogar en forma</h1>
+                    <img src="./assets/alimentos1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+
                     </div>
                 </div>
             </div>
@@ -91,7 +91,7 @@
     </header>
 
     <main>
-        <h2 class="text-center my-5 titte2">¿Quiénes somos?</h2>
+        <h2 class="text-center my-5 titte2" id="somos">¿Quiénes somos?</h2>
         <div class="container">
             <div class="row">
                 <div class="d-flex justify-content-center">
@@ -115,7 +115,6 @@
                 </div>
             </div>
         </div>
-
         <hr class="my-5">
         <!-- Texto -->
         <div class="container my-5">
@@ -151,16 +150,16 @@
         </div>
 
         <div class="container my-5 pt-1 text-center bg-carrusel">
-            <h2 class="mt-5 mb-5 titte2">Para ti</h2>
+            <h2 class="mt-5 mb-5 titte2" id="parati">Para ti</h2>
 
             <!-- Filter Buttons -->
             <div class="mb-4 d-grid gap-2 d-sm-flex justify-content-center">
-                <button class="border2 btn btn-outline filter-btn parrafo" data-filter="web">Nutrición y
+                <button class="border2 btn btn-outline filter-btn menu1" data-filter="web">Nutrición y
                     alimentación</button>
-                <button class="border2 btn btn-outline filter-btn parrafo" data-filter="design">Ejercicio
+                <button class="border2 btn btn-outline filter-btn menu1" data-filter="design">Ejercicio
                     físico</button>
-                <button class="border2 btn btn-outline filter-btn parrafo" data-filter="photo">Salud mental</button>
-                <button class="border2 btn btn-outline filter-btn parrafo" data-filter="all">Ver todo</button>
+                <button class="border2 btn btn-outline filter-btn menu1" data-filter="photo">Salud mental</button>
+                <button class="border2 btn btn-outline filter-btn menu1" data-filter="all">Ver todo</button>
             </div>
 
             <!-- Portfolio Items -->
@@ -168,8 +167,7 @@
                 <!-- Web Items -->
                 <div class="col-lg-4 col-md-6 col-12 my-2 portfolio-item web show">
                     <div class="card">
-                        <img src="https://www.nestlemenuplanner.es/modules/custom/nestlemenuplanner/src/assets/nestlemenuplanner/_img/_sabias-que/menu-mediterraneo.jpg?v=67"
-                            class="card-img-top" alt="dieta">
+                        <img src="./assets/dietas.jpg" class="card-img-top" alt="dieta">
                         <div class="card-body">
                             <h5 class="card-title parrafo">Dietas y Planificación Alimentaria</h5>
                         </div>
@@ -178,8 +176,7 @@
 
                 <div class="col-lg-4 col-md-6 col-12 my-2 portfolio-item web show">
                     <div class="card">
-                        <img src="https://blog.natruly.com/wp-content/uploads/2017/03/Dieta-paleo-variada.jpg"
-                            class="card-img-top" alt="alimento organico">
+                        <img src="./assets/alimentos2.jpg" class="card-img-top" alt="alimento organico">
                         <div class="card-body">
                             <h5 class="card-title parrafo">Alimentos Naturales y Orgánicos</h5>
                         </div>
@@ -188,8 +185,7 @@
 
                 <div class="col-lg-4 col-md-6 col-12 my-2 portfolio-item web show">
                     <div class="card">
-                        <img src="https://ixalud.es/wp-content/uploads/2021/11/Diseno-sin-titulo-73.png"
-                            class="card-img-top" alt="Hidratación">
+                        <img src="./assets/hidratacion.jpg" alt="Hidratación">
                         <div class="card-body">
                             <h5 class="card-title parrafo">Hidratación</h5>
                         </div>
@@ -296,7 +292,7 @@
         </div>
         </div>
 
-        <h2 class="text-center titte2">Un equipo de expertos enfocado en ayudarte a cumplir tus metas</h2>
+        <h2 class="text-center titte2" id="equipo">Un equipo de expertos enfocado en ayudarte a cumplir tus metas</h2>
         <div class="container-fluid my-5">
             <div class="row justify-content-center d-flex gap-2">
                 <!-- Tarjeta 1 -->
@@ -354,18 +350,19 @@
             <div class="row">
                 <div class="col-md-4">
                     <h4>Secciones</h4>
-                    <a href="#">Inicio</a>
-                    <a href="#">Para ti</a>
+                    <a href="./index.html">Inicio</a>
+                    <a href="#parati">Para ti</a>
                 </div>
                 <div class="col-md-4">
                     <h4>Nosotros</h4>
-                    <a href="#">Nuestro equipo</a>
-                    <a href="#">Quiénes somos</a>
+                    <a href="#equipo">Nuestro equipo</a>
+                    <a href="#somos">Quiénes somos</a>
                 </div>
                 <div class="col-md-4">
                     <h4>Contacto</h4>
-                    <a href="#">Contáctenos</a>
-                    <a href="#">Servicio al cliente</a>
+                    <a href="./pages/form.html">Contáctenos</a>
+                    <a href="#" onclick="alert('¡Estamos trabajando en ello!')">Servicio al cliente</a>
+
                 </div>
             </div>
         </div>
@@ -375,13 +372,13 @@
             <!-- Sección de Redes Sociales centradas -->
             <div class="d-flex justify-content-center gap-4 my-4 social-icons">
                 <a href="https://facebook.com" target="_blank">
-                    <img src="https://img.icons8.com/?size=100&id=118497&format=png&color=000000" alt="Facebook">
+                    <img src="https://img.icons8.com/?size=100&id=118468&format=png&color=000000" alt="Facebook">
                 </a>
                 <a href="https://twitter.com" target="_blank">
-                    <img src="https://img.icons8.com/?size=100&id=zXhRTdxWEKE5&format=png&color=000000" alt="Twitter">
+                    <img src="https://img.icons8.com/?size=100&id=DL6l560LAtc4&format=png&color=000000" alt="Twitter">
                 </a>
                 <a href="https://instagram.com" target="_blank">
-                    <img src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000" alt="Instagram">
+                    <img src="https://img.icons8.com/?size=100&id=eRJfQw0Zs44S&format=png&color=000000" alt="Instagram">
                 </a>
             </div>
 

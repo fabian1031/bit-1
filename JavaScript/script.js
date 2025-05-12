@@ -25,6 +25,10 @@ filterButtons.forEach(button => {
   });
 });
 
+function mostrarAlerta() {
+        alert("Estamos trabajando en ello. ¡Vuelve pronto!");
+    }
+
 const $form = document.getElementById("form")
 $form.addEventListener("submit", (event) => {
   event.preventDefault();
